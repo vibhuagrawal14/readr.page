@@ -56,13 +56,15 @@ body {
 h1 {
   color:var(--colorOne);
   font-family:monospace;
-  font-size:2.5em;
+  font-size:2em;
   font-weight:100;
   padding:0px 10px;
   /*padding-bottom:10px;*/
   /*background:#111;*/
   /*outline:1px solid var(--colorOne);*/
   margin:12px;
+  text-align:left;
+  padding-left:2%;
 }
 
 .feedLink {
@@ -168,6 +170,7 @@ iframe {
   h1{
     font-size: 5em;
     padding:25px 10px;
+    padding-left:8.5%;
   }
   li{
     font-size: 1.5em;
