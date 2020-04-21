@@ -65,6 +65,7 @@ h1 {
   margin:12px;
   text-align:left;
   padding-left:2%;
+  margin-bottom: 0px;
 }
 
 .feedLink {
@@ -79,7 +80,6 @@ h1 {
   max-width:90%;
   height:80.5vh;
   margin:3vh 1.5vw;
-  margin-top: 1vh;
   display:inline-block;
   position:relative;
   vertical-align:top;
@@ -138,13 +138,15 @@ iframe {
   border-radius: 50%;
   display: inline-block;
   margin: 5px;
+  position: relative;
+  top: 3px;
 }
 .feedTitle {
   width:calc(100% - 20px);
   padding:15px 10px;
   background:#151515;
   font-family:monospace;
-  font-size:24px;
+  font-size:1.5em;
   color:var(--colorOne);
   position:sticky;
   top:0;
@@ -165,15 +167,17 @@ iframe {
   .dot{
     height: 2em;
     width: 2em;
-    margin: 20px;
+    margin: 0px 20px;
+    position: static;
   }
   h1{
     font-size: 5em;
     padding:25px 10px;
     padding-left:8.5%;
+    margin:12px;
   }
   li{
-    font-size: 1.5em;
+    font-size: 1.65em;
     padding-left:3%;
   }
   button{

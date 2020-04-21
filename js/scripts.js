@@ -74,8 +74,12 @@ function deleteElement(){
 function newElement() {
   var inputValue = document.getElementById("feed-text-box").value;
     if (inputValue === '') {
-    alert("You must write something!");
-  } else {
+    alert("Please enter hackernews or a subreddit's name");
+  } 
+  else if (keys.includes(inputValue)){
+    alert(inputValue + " already exists!");
+  }
+  else {
   var li = document.createElement("li");
   li.className = "feed-li"
   var t = document.createTextNode(inputValue);
@@ -128,15 +132,43 @@ madeWithLove.className = "footer-text"
 madeWithLove.innerHTML = "made with <3 by <a href='https://www.vibhuagrawal.com'>vibhu agrawal</a><br>"
 footer.appendChild(madeWithLove);
 
+appendCirclesTo = document.getElementById('footer')
 
-var colors = ["mediumpurple", "mediumseagreen", "tomato", "cornflowerblue", "orchid"]
-for (var i=0;i<colors.length;i++){
+var colors = ["mediumseagreen", "tomato", "cornflowerblue", "orchid"]
+var circleDiv = document.createElement('div');
+circleDiv.className = "circle-div";
+circleDiv.style["margin-top"] = "0.5vh"
+appendCirclesTo.appendChild(circleDiv);
+
+for (var i=0;i<colors.length/2;i++){
   var circle = document.createElement('span')
   circle.className = "dot"
   circle.style["background-color"] = colors[i];
   circle.addEventListener("click", function(){changeColor(this.style["background-color"])});
-  footer.appendChild(circle);
+  circleDiv.appendChild(circle);
 }
+
+var githubIconDiv = document.createElement('button');
+var githubIcon = document.createElement('i');
+githubIcon.className = "fa fa-github";
+githubIcon.style["font-size"] = "2em";
+githubIcon.style["color"] = "white";
+githubIcon.onclick = function(){location.href='https://github.com/vibhuagrawal14/readr.page';}
+if(window.innerHeight < window.innerWidth){
+  githubIcon.style["font-size"] = "1.3em";
+}
+githubIconDiv.appendChild(githubIcon);
+circleDiv.appendChild(githubIconDiv);
+
+for (var i=colors.length/2;i<colors.length;i++){
+  var circle = document.createElement('span')
+  circle.className = "dot"
+  circle.style["background-color"] = colors[i];
+  circle.addEventListener("click", function(){changeColor(this.style["background-color"])});
+  circleDiv.appendChild(circle);
+}
+
+
 
 function getRedditData(j){
   listData[j] = [];

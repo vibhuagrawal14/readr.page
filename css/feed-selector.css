@@ -126,6 +126,15 @@ input {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+.feed-selector-open{
+  font-size:1em;
+  position: absolute;
+  translateY(50%);
+  right:0;
+  margin-right:10px;
+  padding-right: 2%
+}
+
 @media screen and (orientation:portrait) {
   .feed-selector{
     width:75%;
@@ -142,13 +151,9 @@ input {
   input{
     font-size: 0.8em;
   }
-}
-.feed-selector-open{
-  font-size:1em;
-  position: absolute;
-  translateY(50%);
-  right:0;
-  padding-right: 2%
+  .feed-selector-open{
+    padding-right:8.5%;
+  }
 }
 
 .feed-selector-text-box{
