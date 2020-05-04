@@ -1,4 +1,4 @@
-# [readr.page](readr.page)
+# [readr.page](https://readr.page)
 A static feed aggregator for Hacker News and reddit written in Javascript. This is my daily driver for distraction free reading.
 
 ![](documentation/image-1.png)
