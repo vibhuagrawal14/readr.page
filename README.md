@@ -14,10 +14,10 @@ The feeds can be customized using the settings icon at the top right. The input 
  #### Customizing colors
  
 Text color can be customized using the colored-circles at the bottom of the page. There are four colors available:
-* ![#FF6347](https://placehold.it/15/FF6347/000000?text=+) tomato `#FF6347`
-* ![#DA70D6](https://placehold.it/15/DA70D6/000000?text=+) orchid `#DA70D6`
-* ![#6495ED](https://placehold.it/15/6495ED/000000?text=+) cornflowerblue `#6495ED`
-* ![#3CB371](https://placehold.it/15/3CB371/000000?text=+) mediumseagreen `#3CB371`
+* ![#FF6347](http://placehold.it/15/FF6347/000000?text=+) tomato `#FF6347`
+* ![#DA70D6](http://placehold.it/15/DA70D6/000000?text=+) orchid `#DA70D6`
+* ![#6495ED](http://placehold.it/15/6495ED/000000?text=+) cornflowerblue `#6495ED`
+* ![#3CB371](http://placehold.it/15/3CB371/000000?text=+) mediumseagreen `#3CB371`
 
 ![Color options](documentation/colors.png)
  
